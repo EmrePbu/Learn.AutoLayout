@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,39 +13,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Learn_AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc2-hY-VbR" userLabel="btnTop">
-                                <rect key="frame" x="434.5" y="244" width="48" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Top"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-dZ-iHZ" userLabel="btnMiddle">
-                                <rect key="frame" x="368" y="283" width="114.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Middle Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALp-lB-S2J" userLabel="btnBottom">
-                                <rect key="frame" x="368" y="322" width="160" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Bottom Button Buton">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-9D-Jak" userLabel="ViewBrown">
+                                <rect key="frame" x="0.0" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzM-1d-oiB" userLabel="ViewGreen">
+                                <rect key="frame" x="207" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUZ-N1-pkT" userLabel="ViewTeal">
+                                <rect key="frame" x="0.0" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-Rn-tS6" userLabel="ViewPurple">
+                                <rect key="frame" x="207" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ALp-lB-S2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MwN-ab-P0v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ALp-lB-S2J" secondAttribute="bottom" constant="40" id="NSj-61-Ula"/>
-                            <constraint firstItem="aRd-dZ-iHZ" firstAttribute="top" secondItem="Pc2-hY-VbR" secondAttribute="bottom" constant="8" id="cw9-gZ-JMP"/>
-                            <constraint firstItem="aRd-dZ-iHZ" firstAttribute="trailing" secondItem="Pc2-hY-VbR" secondAttribute="trailing" id="eWc-px-Dy4"/>
-                            <constraint firstItem="ALp-lB-S2J" firstAttribute="top" secondItem="aRd-dZ-iHZ" secondAttribute="bottom" constant="8" id="iPf-EI-h1V"/>
-                            <constraint firstItem="ALp-lB-S2J" firstAttribute="leading" secondItem="aRd-dZ-iHZ" secondAttribute="leading" id="mkc-Rf-iMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XTM-Rn-tS6" secondAttribute="trailing" id="3eG-qg-ohh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vzM-1d-oiB" secondAttribute="trailing" id="BmL-LY-ZYK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aUZ-N1-pkT" secondAttribute="bottom" id="CaT-Ab-BM4"/>
+                            <constraint firstItem="cCn-9D-Jak" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ccq-EE-y0C"/>
+                            <constraint firstItem="XTM-Rn-tS6" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="J10-il-k82"/>
+                            <constraint firstItem="vzM-1d-oiB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NN1-7X-BNw"/>
+                            <constraint firstItem="aUZ-N1-pkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Oae-ci-yzZ"/>
+                            <constraint firstItem="cCn-9D-Jak" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="OgL-r8-BI9"/>
+                            <constraint firstItem="aUZ-N1-pkT" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="1/2" id="aQX-X5-r0C"/>
+                            <constraint firstItem="cCn-9D-Jak" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b3E-r0-KTd"/>
+                            <constraint firstItem="XTM-Rn-tS6" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="cZp-Vg-LxG"/>
+                            <constraint firstItem="XTM-Rn-tS6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cpe-vQ-xII"/>
+                            <constraint firstItem="vzM-1d-oiB" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="e2d-Ak-prT"/>
+                            <constraint firstItem="cCn-9D-Jak" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="jK5-KP-TCv"/>
+                            <constraint firstItem="vzM-1d-oiB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ogT-lk-isj"/>
+                            <constraint firstItem="aUZ-N1-pkT" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="zPJ-cl-udD"/>
+                            <constraint firstItem="vzM-1d-oiB" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="zfO-lw-NKK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vzM-1d-oiB" secondAttribute="trailing" id="zoC-K2-sRe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -55,14 +63,20 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
