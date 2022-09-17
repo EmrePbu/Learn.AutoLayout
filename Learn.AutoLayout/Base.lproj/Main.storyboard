@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,19 +16,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cax-Uy-npv">
-                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RzQ-cZ-Gw2">
+                                <rect key="frame" x="40" y="174.5" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K3-WY-VQc">
+                                <rect key="frame" x="40" y="144" width="82.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="PastelGreen1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRt-7S-Wtr">
+                                <rect key="frame" x="40" y="228.5" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="PastelGreen1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZD-sh-xvW">
+                                <rect key="frame" x="184.5" y="821" width="45" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="PFY-tf-vSK"/>
-                                    <constraint firstAttribute="height" constant="128" id="n1g-fe-qG5"/>
+                                    <constraint firstAttribute="width" constant="45" id="dke-Qv-0xk"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="PastelGreen1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daO-dt-8AL">
+                                <rect key="frame" x="40" y="259.5" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ie-Tb-R33">
+                                <rect key="frame" x="60" y="313.5" width="294" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                    <color key="baseBackgroundColor" name="PastelGreen2"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj6-B8-YmT">
+                                <rect key="frame" x="60" y="364.5" width="294" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="English">
+                                    <color key="baseBackgroundColor" name="PastelGreen2"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="PastelGreen3"/>
                         <constraints>
-                            <constraint firstItem="cax-Uy-npv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GnB-ia-3Re"/>
-                            <constraint firstItem="cax-Uy-npv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TVf-J8-DgV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ie-Tb-R33" secondAttribute="trailing" constant="60" id="3fj-iy-QaP"/>
+                            <constraint firstItem="Xj6-B8-YmT" firstAttribute="top" secondItem="2Ie-Tb-R33" secondAttribute="bottom" constant="20" id="4ms-1U-ehS"/>
+                            <constraint firstItem="Xj6-B8-YmT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5aT-cv-toa"/>
+                            <constraint firstItem="yZD-sh-xvW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72S-BM-Nds"/>
+                            <constraint firstItem="2Ie-Tb-R33" firstAttribute="top" secondItem="daO-dt-8AL" secondAttribute="bottom" constant="20" id="73f-xt-Klv"/>
+                            <constraint firstItem="RzQ-cZ-Gw2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="8Eb-Ni-0SV"/>
+                            <constraint firstItem="1K3-WY-VQc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ADQ-qi-Shi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RzQ-cZ-Gw2" secondAttribute="trailing" constant="40" id="DqP-0H-dI1"/>
+                            <constraint firstItem="RzQ-cZ-Gw2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FCq-pe-vB2"/>
+                            <constraint firstItem="RzQ-cZ-Gw2" firstAttribute="top" secondItem="1K3-WY-VQc" secondAttribute="bottom" constant="10" id="FYx-Cz-fW3"/>
+                            <constraint firstItem="Xj6-B8-YmT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Iit-en-31S"/>
+                            <constraint firstItem="2Ie-Tb-R33" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q1f-DB-7Vs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yZD-sh-xvW" secondAttribute="bottom" constant="20" id="RzF-J9-REr"/>
+                            <constraint firstItem="2Ie-Tb-R33" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="VjZ-Dg-KAx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xj6-B8-YmT" secondAttribute="trailing" constant="60" id="Wrd-lw-WHf"/>
+                            <constraint firstItem="RzQ-cZ-Gw2" firstAttribute="leading" secondItem="1K3-WY-VQc" secondAttribute="leading" id="cZ3-yD-jir"/>
+                            <constraint firstItem="daO-dt-8AL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="iSE-OV-iA6"/>
+                            <constraint firstItem="vRt-7S-Wtr" firstAttribute="top" secondItem="RzQ-cZ-Gw2" secondAttribute="bottom" constant="20" id="ikR-uB-XzR"/>
+                            <constraint firstItem="daO-dt-8AL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p2k-N1-C0c"/>
+                            <constraint firstItem="daO-dt-8AL" firstAttribute="leading" secondItem="vRt-7S-Wtr" secondAttribute="leading" id="qyT-Tq-KU4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="daO-dt-8AL" secondAttribute="trailing" constant="40" id="rve-yn-zTx"/>
+                            <constraint firstItem="daO-dt-8AL" firstAttribute="top" secondItem="vRt-7S-Wtr" secondAttribute="bottom" constant="10" id="xT1-ge-aaB"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,9 +96,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SettingIcon" width="20" height="20"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="PastelGreen1">
+            <color red="0.68235294117647061" green="0.75686274509803919" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PastelGreen2">
+            <color red="0.74509803921568629" green="0.80784313725490198" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PastelGreen3">
+            <color red="0.83529411764705885" green="0.8784313725490196" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

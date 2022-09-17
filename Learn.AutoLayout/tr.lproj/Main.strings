@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "User name"; ObjectID = "1K3-WY-VQc"; */
+"1K3-WY-VQc.text" = "Kullanıcı adı";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "2Ie-Tb-R33"; */
+"2Ie-Tb-R33.configuration.title" = "Giriş Yap";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2Ie-Tb-R33"; */
+"2Ie-Tb-R33.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "English"; ObjectID = "Xj6-B8-YmT"; */
+"Xj6-B8-YmT.configuration.title" = "İngilizce";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xj6-B8-YmT"; */
+"Xj6-B8-YmT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "vRt-7S-Wtr"; */
+"vRt-7S-Wtr.text" = "Şifre";
+
+/* Class = "UILabel"; text = "Help"; ObjectID = "yZD-sh-xvW"; */
+"yZD-sh-xvW.text" = "Yardım";
